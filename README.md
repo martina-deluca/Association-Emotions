@@ -125,16 +125,13 @@ Some important metrics to consider for association rule algorithms are described
 • Support count(E1): is the number of transactions containing Emotion 1.
 
 • Support(E1): is the support count divided by the number of total transactions.
-
-Support(E1) = (Number of transactions containing Emotion 1)/(Total number of transactions)
+ - Support(E1) = (Number of transactions containing Emotion 1)/(Total number of transactions)
 
 • Confidence(E1 → E2): indicates out of all the times emotion 1 appears, how many times is also emotion 2 present.
-
-Confidence(E1 → E2) = (Number of transactions containing E1 and E2)/(Number of transactions containing E1)
+ - Confidence(E1 → E2) = (Number of transactions containing E1 and E2)/(Number of transactions containing E1)
 
 • Lift(E1 → E2): indicates how often the emotions appear together in comparison to what is expected by chance.
-
-Lift(E1 → E2) = (Confidence(E1 → E2))/ (Support(E2))
+ - Lift(E1 → E2) = (Confidence(E1 → E2))/ (Support(E2))
 
 We applied two association rule algorithms to identify correlation between the emotions exhibited in the posts.
 We generated the association rules from the results of the three sentiment analysis approaches. The results
@@ -191,4 +188,26 @@ After updating the dataset, each user would contain a list of items indicating f
 From this dataset we were able to apply the predefined FPGrowth function from pyfpgrowth library [4] and
 incorporated association rules with highest confidence, ordered by lift.
 
+# Results
+## Sentiment Analysis
+
+As a result of the sentiment analysis processes we could see an overview of how the emotions are displayed for
+this specific data set. Below we present the most relevant graphs that show how these emotions are distributed
+for the Text2Emotion - Maximum approach. First, Plot a and Plot e show how the emotions are represented
+and distributed for all users. Then, Plot b, Plot c and Plot d display the same distributions for individual
+random users over several months to see what is the common emotion for a user.
+
+
+![image 1](images/emotion_for_the_entire_data.jpg)
+(a) Distribution of emotions for all users
+
+
+![image 2](images/emotion_of_a_single_user.jpg)
+(b) Distribution of emotions for one user
+
+![image 3](images/emotion_time_series_users.jpg)
+(c) Time Series of emotion for 2 random users
+
+![image 4](images/table_1.jpg)
+(d) Time Series of emotion for all users
 
