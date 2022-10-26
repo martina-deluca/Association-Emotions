@@ -208,6 +208,6 @@ random users over several months to see what is the common emotion for a user.
 ![image 3](images/emotion_time_series_users.jpg)
 (c) Time Series of emotion for 2 random users
 
-![image 4](images/table_1.jpg)
+![image 4](images/emotion_time_series_total_reddit.jpg)
 (d) Time Series of emotion for all users
 
